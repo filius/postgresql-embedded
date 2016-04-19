@@ -1,24 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-
-    <parent>
-        <groupId>org.sonatype.oss</groupId>
-        <artifactId>oss-parent</artifactId>
-        <version>9</version>
-    </parent>
-
     <modelVersion>4.0.0</modelVersion>
-    <groupId>ru.yandex.qatools.embed</groupId>
-    <artifactId>postgresql-embedded</artifactId>
-    <version>1.12-SNAPSHOT</version>
-    <name>Embedded PostgreSQL (based on Flapdoodle-OSS embedded services)</name>
 
+    <groupId>org.novsys</groupId>
+    <artifactId>postgresql-embedded</artifactId>
+    <version>1.12-novsys</version>
+    <name>Embedded PostgreSQL (based on Flapdoodle-OSS embedded services)</name>
     <description>An embedded PostgreSQL...</description>
 
-    <organization>
-        <name>Yandex</name>
-        <url>http://company.yandex.com</url>
-    </organization>
     <licenses>
         <license>
             <name>The Apache Software License, Version 2.0</name>
@@ -28,13 +17,13 @@
     </licenses>
     <issueManagement>
         <system>GitHub Issues</system>
-        <url>https://github.com/yandex-qatools/postgresql-embedded/issues</url>
+        <url>https://github.com/filius/postgresql-embedded/issues</url>
     </issueManagement>
 
     <scm>
-        <connection>scm:git:git@github.com:yandex-qatools/postgresql-embedded.git</connection>
-        <developerConnection>scm:git:git@github.com:yandex-qatools/postgresql-embedded.git</developerConnection>
-        <url>git@github.com:yandex-qatools/postgresql-embedded.git</url>
+        <connection>scm:git:git@github.com:filius/postgresql-embedded.git</connection>
+        <developerConnection>scm:git:git@github.com:filius/postgresql-embedded.git</developerConnection>
+        <url>git@github.com:filius/postgresql-embedded.git</url>
         <tag>HEAD</tag>
     </scm>
 
