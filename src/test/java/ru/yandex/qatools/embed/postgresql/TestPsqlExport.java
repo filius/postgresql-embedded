@@ -59,15 +59,27 @@ public class TestPsqlExport {
         assertThat(conn, not(nullValue()));
 
         File fullExportDump = File.createTempFile("full_", ".dmp");
-        process.exportToFile(fullExportDump);
-        assertTrue(fullExportDump.length() > 0);
+        try {
+            process.exportToFile(fullExportDump);
+            assertTrue(fullExportDump.length() > 0);
+        } finally {
+            assertTrue(fullExportDump.delete());
+        }
 
         File schemeDump = File.createTempFile("scheme_", ".dmp");
-        process.exportSchemeToFile(schemeDump);
-        assertTrue(schemeDump.length() > 0);
+        try {
+            process.exportSchemeToFile(schemeDump);
+            assertTrue(schemeDump.length() > 0);
+        } finally {
+            assertTrue(schemeDump.delete());
+        }
 
         File dataExportDump = File.createTempFile("data_", ".dmp");
-        process.exportToFile(dataExportDump);
-        assertTrue(dataExportDump.length() > 0);
+        try {
+            process.exportToFile(dataExportDump);
+            assertTrue(dataExportDump.length() > 0);
+        } finally {
+            assertTrue(dataExportDump.delete());
+        }
     }
 }
